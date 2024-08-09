@@ -4,7 +4,7 @@ import config.ApplicationManager;
 import org.testng.annotations.Test;
 import pages.HomePageRu;
 
-public class LoginTests extends ApplicationManager {
+public class LoginTestsRu extends ApplicationManager {
 
     @Test
     public void startPositiveTest(){

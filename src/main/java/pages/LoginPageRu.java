@@ -1,4 +1,4 @@
 package pages;
 
-public class LoginPage extends BasePage{
+public class LoginPageRu extends BasePage{
 }
