@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92a8c2c1-dc0f-472a-8494-2febd3339468" name="Changes" comment="added UserDto, pagesRu">
+    <list default="true" id="92a8c2c1-dc0f-472a-8494-2febd3339468" name="Changes" comment="added UserDto, pagesRu, BasePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,12 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723666057054</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added UserDto, pagesRu, BasePage">
+      <option name="closed" value="true" />
+      <created>1723915044405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723915044405</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="added UserDto, pagesRu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added UserDto, pagesRu" />
+    <MESSAGE value="added UserDto, pagesRu, BasePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added UserDto, pagesRu, BasePage" />
   </component>
 </project>
