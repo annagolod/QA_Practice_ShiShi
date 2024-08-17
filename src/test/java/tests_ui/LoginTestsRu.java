@@ -32,7 +32,6 @@ public class LoginTestsRu extends ApplicationManager {
         pause(3);
         loginUserPageRu.typeLoginForm(userDto);
         loginUserPageRu.submitLoginForm();
-        Assert.assertTrue(BasePage.isElementPresent(By.xpath("//a[@href='auth/user']")));
-
+        Assert.assertTrue(loginUserPageRu.loginIsSuccessful());
     }
 }

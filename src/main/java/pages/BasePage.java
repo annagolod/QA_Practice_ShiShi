@@ -112,6 +112,16 @@ public class BasePage {
         return !list.isEmpty();
     }
 
+    public static boolean isTextContainsInElement(WebElement element, String text, int time){
+        try {
+            return new WebDriverWait(driver, Duration.ofSeconds(time))
+                    .until(ExpectedConditions.textToBePresentInElement(element, text));
+        } catch (TimeoutException e){
+            e.printStackTrace();
+        }
+        return false;
+    }
+
 
 
 }

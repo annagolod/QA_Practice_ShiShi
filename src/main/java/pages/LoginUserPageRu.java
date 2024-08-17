@@ -1,6 +1,7 @@
 package pages;
 
 import dto.UserDto;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,4 +29,9 @@ public class LoginUserPageRu extends BasePage{
         btnSubmit.click();
         return new UserPageRu(driver);
     }
+
+    public boolean loginIsSuccessful(){
+        return isElementPresent(By.xpath("//a[@href='auth/user']"));
+    }
+
 }
