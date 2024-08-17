@@ -2,6 +2,9 @@ package tests_ui;
 
 import config.ApplicationManager;
 import dto.UserDto;
+import helpers.PropertiesReader;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.BasePage;
@@ -23,10 +26,13 @@ public class LoginTestsRu extends ApplicationManager {
     @Test
     public void loginPositiveTest() {
         UserDto userDto = UserDto.builder()
-                .email("email")
-                .password("password")
+                .email(PropertiesReader.getProperty("data.properties", "email"))
+                .password(PropertiesReader.getProperty("data.properties", "password"))
                 .build();
         pause(3);
         loginUserPageRu.typeLoginForm(userDto);
+        loginUserPageRu.submitLoginForm();
+        Assert.assertTrue(BasePage.isElementPresent(By.xpath("//a[@href='auth/user']")));
+
     }
 }

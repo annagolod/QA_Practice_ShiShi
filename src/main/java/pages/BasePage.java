@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 import static helpers.enums.HeaderMenuItemsEn.*;
 
@@ -105,4 +106,12 @@ public class BasePage {
             e.printStackTrace();
         }
     }
+
+    public static boolean isElementPresent(By locator){
+        List<WebElement> list = driver.findElements(locator);
+        return !list.isEmpty();
+    }
+
+
+
 }

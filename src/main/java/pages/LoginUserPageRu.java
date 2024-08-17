@@ -16,9 +16,16 @@ public class LoginUserPageRu extends BasePage{
     WebElement fieldEmail;
     @FindBy(xpath = "//input[@id='password']")
     WebElement fieldPassword;
+    @FindBy(xpath = "//input[@name='submit']")
+    WebElement btnSubmit;
+
     public LoginUserPageRu typeLoginForm(UserDto userDto) {
         fieldEmail.sendKeys(userDto.getEmail());
         fieldPassword.sendKeys(userDto.getPassword());
         return this;
+    }
+    public UserPageRu submitLoginForm(){
+        btnSubmit.click();
+        return new UserPageRu(driver);
     }
 }
